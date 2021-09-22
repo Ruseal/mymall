@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 500px;
+           transform: s;
+        }
+        .div{
+            justify-content: space-between;
+            width: 200px;
+            height: 200px;
+            
+            margin: 100px  auto;
+            /* transform: rotate3d(0,0,0,0); */
+            transition: all 1s;
+            transform-style: preserve-3d;
+        }
+        .div:hover{   
+            transform: rotateY(45deg);
+        }
+        div[class^=aaa]{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(158, 116, 116);
+        }
+        div .aaa2{
+            background-color: rgb(194, 16, 16);
+            transform: rotateX(60deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="aaa1"></div>
+        <div class="aaa2"></div>
+    </div>
+    <script>
+console.log(parseInt(3, 0));
+
+        
+    </script>
+</body>
+</html>
